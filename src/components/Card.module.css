@@ -4,7 +4,7 @@
     background-color: #fff;
     border-radius: .5rem;
     max-width: 46.875rem;
-
+    box-shadow: 4px 4px 1rem rgba(0, 0, 0, .1);
 }
 
 .card > img {

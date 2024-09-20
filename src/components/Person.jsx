@@ -18,7 +18,7 @@ function Person() {
 
             <img src="./images/icon-share.svg" alt="" className={styles.imageShare} onClick={handleOpening} />
 
-            {isOpen && <div className={styles.shareIcons}>
+            <div className={`${styles.shareIcons} ${isOpen ? styles.shareIconsOpen : ''}`}>
                 <div className={styles.shareIconsContent}>
                 <h4>SHARE</h4>
                 <img src="./images/icon-facebook.svg" alt="icon facebook" />
@@ -26,7 +26,7 @@ function Person() {
                 <img src="./images/icon-pinterest.svg" alt="icon pinterest" />
                 </div>
                 <img src="./images/share.png" alt="" className={styles.imageAbsShare} onClick={handleOpening} />
-            </div>}
+            </div>
         </div>
     )
 }
