@@ -1,0 +1,97 @@
+.person {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.person h3 {
+  font-size: 0.875rem;
+}
+
+.person p {
+  color: var(--Grayish-Blue);
+  font-size: 0.813rem;
+}
+
+.imageAvatar {
+  width: 2.5rem;
+  border-radius: 100vw;
+  margin-right: 1rem;
+}
+
+.imageShare {
+  margin-left: auto;
+  background-color: var(--Light-Grayish-Blue);
+  padding: 0.5rem;
+  border-radius: 100vw;
+  cursor: pointer;
+}
+
+.imageAbsShare {
+  margin-left: auto;
+  background-color: var(--Desaturated-Dark-Blue);
+  padding: 0.5rem;
+  border-radius: 100vw;
+  cursor: pointer;
+}
+
+.shareIcons {
+  position: absolute;
+  background-color: var(--Very-Dark-Grayish-Blue);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-block: 1.25rem;
+  padding-inline: 7.5%;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.shareIcons h4 {
+  letter-spacing: 0.2rem;
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+}
+
+.shareIconsContent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.shareIcons::after {
+  content: "";
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+  background-color: var(--Very-Dark-Grayish-Blue);
+  width: 10.5%;
+  height: 0.75rem;
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  display: none;
+}
+
+@media (min-width: 53.125em) {
+  .person {
+    position: relative;
+    width: 94%;
+    margin-top: 1rem;
+  }
+
+  .shareIcons {
+    bottom: 3.5rem;
+    right: -26.25%;
+    left: auto;
+    width: 60%;
+    border-radius: 1rem;
+  }
+  .imageAbsShare {
+    display: none;
+  }
+
+  .shareIcons::after {
+    display: block;
+  }
+}
